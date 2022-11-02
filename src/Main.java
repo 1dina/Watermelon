@@ -4,7 +4,6 @@ public class Main {
     public static void main(String[] args) {
         int weight;
         Scanner in = new Scanner(System.in);
-        System.out.println("How much does the watermelon weigh ?");
         weight = in.nextInt();
         if (weight<=0 || weight >100){
             while (true){
@@ -15,9 +14,9 @@ public class Main {
                 }
             }
         }
-        if (weight % 2 == 0)
-            System.out.println("Yes ");
-        else System.out.println("No");
+        if (weight % 2 == 0 && weight!=2)
+            System.out.println("YES ");
+        else System.out.println("NO");
 
 
 
